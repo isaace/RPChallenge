@@ -42,7 +42,7 @@ while EXIT == 0:
     alive = proc.poll()
     if alive is not None:
         print "Start me" + "alive is " + str(alive)
-        proc = subprocess.Popen(["/usr/bin/aplay", "/home/pi/SAP-dokm-handson/RP/background150.wav"])
+        proc = subprocess.Popen(["/usr/bin/aplay", "/home/pi/RPChallenge/RP/background150.wav"])
     time.sleep(loop_sleep)
     
 subprocess.Popen.kill(proc)
